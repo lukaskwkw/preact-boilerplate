@@ -1,6 +1,6 @@
-import React from "react"
-import ReactDom from "react-dom"
-import App from "./App"
-import "./index.css"
+import React from "preact/compat";
 
-ReactDom.render(<App />, document.getElementById('app'))
+import App from "./App";
+import "./index.css";
+
+React.render(<App />, document.body);
