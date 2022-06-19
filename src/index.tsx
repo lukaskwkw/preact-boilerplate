@@ -1,6 +1,7 @@
 import React from "preact/compat";
+import ReactDOM from "react-dom";
 
 import App from "./App";
 import "./index.css";
 
-React.render(<App />, document.body);
+ReactDOM.render((<App />) as any, document.body);

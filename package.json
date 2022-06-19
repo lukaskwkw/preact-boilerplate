@@ -1,15 +1,17 @@
 {
-  "name": "olx-ext-2",
+  "name": "Preact boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Preact + Tailwind + Typescript + Webpack boilerplate",
   "main": "src/index.tsx",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
     "build": "cross-env NODE_ENV=production webpack",
-    "start": "serve dist"
+    "start": "serve dist",
+    "eslint": "eslint ./src",
+    "eslint:fix": "eslint --fix ./src"
   },
   "keywords": [],
-  "author": "Your Name",
+  "author": "Łukasz Kwiecień",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.5",
@@ -24,6 +26,11 @@
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
     "cssnano": "^5.1.12",
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-prettier": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "postcss-loader": "^7.0.0",
