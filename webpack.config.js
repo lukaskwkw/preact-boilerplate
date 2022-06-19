@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const TerserWebpackPlugin = require("terser-webpack-plugin");
 
 module.exports = {
     mode: "production",
@@ -32,5 +33,8 @@ module.exports = {
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({ template: './src/index.html' })
     ],
+    optimization: {
+        minimizer: [new TerserWebpackPlugin()],
+    },
 }
 

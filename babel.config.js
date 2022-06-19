@@ -1,18 +1,10 @@
 module.exports = {
     presets: [
         [
-            "@babel/preset-react",
-            {
-                targets: {
-                    node: "current",
-                },
-            },
+            "@babel/preset-react"
         ],
         [
-            "@babel/preset-env",
-            {
-                "useBuiltIns": "entry"
-            },
+            "@babel/preset-env"
         ],
         ["@babel/typescript"]
     ],
